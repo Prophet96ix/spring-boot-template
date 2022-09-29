@@ -1,6 +1,5 @@
-package de.aaronwagner.demo.config.security.config;
+package de.aaronwagner.demo.config.security;
 
-import de.aaronwagner.demo.config.security.JwtTokenProvider;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
@@ -21,6 +20,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .authorizeRequests()
                 .antMatchers("/auth/**").permitAll()
                 .antMatchers("/actuator/health").permitAll()
+                .antMatchers("/demo").permitAll()
                 .anyRequest().authenticated()
                 .and()
                 .csrf().disable()

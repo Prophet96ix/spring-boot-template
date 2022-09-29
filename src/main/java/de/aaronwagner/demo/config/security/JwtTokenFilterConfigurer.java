@@ -1,7 +1,5 @@
-package de.aaronwagner.demo.config.security.config;
+package de.aaronwagner.demo.config.security;
 
-import de.aaronwagner.demo.config.security.JwtTokenFilter;
-import de.aaronwagner.demo.config.security.JwtTokenProvider;
 import org.springframework.security.config.annotation.SecurityConfigurerAdapter;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.web.DefaultSecurityFilterChain;
