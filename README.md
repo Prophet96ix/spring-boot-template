@@ -9,6 +9,7 @@ Template project for a quickstart with Spring Boot.
 - CORS-policy configured to allow traffic from everywhere
 - pre-configured Spring Security with JWT-Token authorization to secure requests
 - very basic user-management
+- H2 in-memory database
 - Dockerfile with ready-to-use deploy-script
 
 ## How to use
