@@ -1,0 +1,21 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.H2Dialect
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+      settings:
+        trace: false
+        web-allow-others: false
+
+server:
+  servlet:
+    context-path: /api
+security:
+  jwt:
+    token:
+      expire-length: 86400000
+      secret-key: demo-secret
