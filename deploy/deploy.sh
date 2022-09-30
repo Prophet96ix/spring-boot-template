@@ -12,8 +12,8 @@ docker image rm $NGINX
 docker container prune -f
 
 # pull new images
-docker build -t $SPRING ../.
-docker build -t $NGINX nginx/.
+#docker build -t $SPRING ../.
+#docker build -t $NGINX nginx/.
 
 # start services
 docker-compose -f docker-compose.yml up -d
