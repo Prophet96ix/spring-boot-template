@@ -1,5 +1,5 @@
 FROM openjdk:17
-COPY . /app/
+COPY ../.. /app/
 
 EXPOSE 8080
 

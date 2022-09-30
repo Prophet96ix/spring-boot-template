@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  nginx_proxy:
+    image: nginx_proxy
+    container_name: nginx_proxy
+    restart: always
+    ports:
+      - "80:80"
+  spring_api:
+    image: spring_api
+    container_name: spring_api
+    restart: always
+    ports:
+      - "8080:8080"
